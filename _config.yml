@@ -40,7 +40,7 @@ permalink: pretty
 #
 # Scripts.
 #
-google_analytics: UA-63604551-1 # e.g. UA-000000-01
+google_analytics: "UA-63604551-1" # e.g. UA-000000-01
 disqus:
 
 #
