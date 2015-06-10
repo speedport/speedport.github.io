@@ -1,21 +1,31 @@
-<html>
-  <head>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+---
+layout: default
+---
 
-      ga('create', 'UA-63604551-1', 'auto');
-      ga('send', 'pageview');
+{% for post in paginator.posts %}
+<div class="article-wrapper">
+    {% if site.share_buttons %}
+    <article>
+    {% else %}
+    <article>
+    {% endif %}
+    {% include article-header.html page=post link=true %}
+        <section class="post-content">
+            {% assign excerpt_size = post.excerpt | size %}
+            {% assign content_size = post.content | size %}
+            {% if excerpt_size < content_size %}
+            {{ post.excerpt }}
+            <a class="btn" href="{{ post.url | prepend: site.baseurl }}">{{ site.str_read_more }}</a>
+            {% else %}
+            {{ post.content }}
+            {% endif %}
+        </section>
+    </article>
+</div>
 
-      windows.location.href = 'http://www.amazon.de/s/ref=as_li_ss_tl?_encoding=UTF8&camp=1638&creative=19454&fst=as%3Aoff&keywords=vdsl%20router&linkCode=ur2&qid=1433429682&rh=i%3Aaps%2Ck%3Avdsl%20router%2Cp_72%3A419117031&rnid=419116031&site-redirect=de&tag=sppt-21';
-    </script>
+{% if forloop.last != true %}
+<hr/>
+{% endif %}
+{% endfor %}
 
-    <meta http-equiv="refresh" content="0;http://www.amazon.de/s/ref=as_li_ss_tl?_encoding=UTF8&camp=1638&creative=19454&fst=as%3Aoff&keywords=vdsl%20router&linkCode=ur2&qid=1433429682&rh=i%3Aaps%2Ck%3Avdsl%20router%2Cp_72%3A419117031&rnid=419116031&site-redirect=de&tag=sppt-21" />
-
-  </head>
-  <body>
-    <p>Hello World.</p>
-  </body>
-</html>
+{% include paginator.html %}
