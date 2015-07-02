@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions
+        name="Couponactivation"
+        targetNamespace="http://www.loyaltypartner.com/lm/core/couponing/couponactivation"
+        xmlns="http://schemas.xmlsoap.org/wsdl/"
+        xmlns:tns="http://www.loyaltypartner.com/lm/core/couponing/couponactivation"
+        xmlns:couponactivation="http://www.loyaltypartner.com/lm/core/couponing/couponactivation/types"
+        xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+
+    <types>
+        <schema xmlns="http://www.w3.org/2001/XMLSchema">
+            <import namespace="http://www.loyaltypartner.com/lm/core/couponing/couponactivation/types"
+                    schemaLocation="http://speedport.io/xsd/CouponActivation.xsd"/>
+        </schema>
+    </types>
+
+    <message name="couponActivationRequestMessage">
+        <part name="body" element="couponactivation:couponActivationRequest"/>
+    </message>
+    <message name="couponActivationResponseMessage">
+        <part name="body" element="couponactivation:couponActivationResponse"/>
+    </message>
+    <message name="couponActivationFaultMessage">
+        <part name="body" element="couponactivation:couponActivationFault"/>
+    </message>
+
+    <portType name="CouponactivationPortType">
+
+        <operation name="couponActivation">
+            <input message="tns:couponActivationRequestMessage"/>
+            <output message="tns:couponActivationResponseMessage"/>
+            <fault name="couponActivationFault" message="tns:couponActivationFaultMessage"/>
+        </operation>
+
+    </portType>
+    <binding name="CouponactivationSoapBinding" type="tns:CouponactivationPortType">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+        <operation name="couponActivation">
+            <soap:operation soapAction="couponActivation"/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="couponActivationFault">
+                <soap:fault name="couponActivationFault" use="literal"/>
+            </fault>
+        </operation>
+
+    </binding>
+    <service name="CouponactivationService">
+        <port name="CouponactivationPort" binding="tns:CouponactivationSoapBinding">
+            <soap:address location="TODO"/>
+        </port>
+    </service>
+</definitions>
