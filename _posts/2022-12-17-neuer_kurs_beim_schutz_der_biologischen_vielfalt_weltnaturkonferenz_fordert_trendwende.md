@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Neuer Kurs beim Schutz der biologischen Vielfalt: Weltnaturkonferenz fordert Trendwende
+title: "Neuer Kurs beim Schutz der biologischen Vielfalt: Weltnaturkonferenz fordert Trendwende"
 tags: Biodiversität, Artenvielfalt, Weltnaturkonferenz, Convention on
 ---
 
