@@ -57,6 +57,7 @@ str_show_all_posts: Show all posts
 # Recent posts.
 #
 recent_posts_num: 10
+size: 100
 
 #
 # Pagination.

@@ -2,6 +2,7 @@
 layout: post
 title: "Donald Trump: Weitere Ermittlungen durch Kapitolausschuss empfohlen"
 tags: Donald Trump, Präsident der Vereinigten Staaten von Amerika, Kontroversen, USKongressausschuss, Kapitol Hill Committee on Oversight and Reform, Beweise
+eye_catch: /assets/img/mk.jpg
 ---
 
 
