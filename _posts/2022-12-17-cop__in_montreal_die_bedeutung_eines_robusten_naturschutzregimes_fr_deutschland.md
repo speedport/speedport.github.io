@@ -1,6 +1,6 @@
 ---
 layout: post
-title: COP 15 in Montreal: Die Bedeutung eines robusten Naturschutzregimes für Deutschland
+title: COP 15 in Montreal die Bedeutung eines robusten Naturschutzregimes für Deutschland
 tags: COP 15, Klimawandel, globale Erwärmung, Naturschutzmaß
 ---
 
