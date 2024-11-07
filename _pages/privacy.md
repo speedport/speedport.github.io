@@ -242,4 +242,4 @@ Wenn Sie also unsere Webseite verwenden, erklären Sie sich einverstanden, dass 
 
 Etwas mehr über reCAPTCHA erfahren Sie auf der Webentwickler-Seite von Google auf https://developers.google.com/recaptcha/. Google geht hier zwar auf die technische Entwicklung der reCAPTCHA näher ein, doch genaue Informationen über Datenspeicherung und datenschutzrelevanten Themen sucht man auch dort vergeblich. Eine gute Übersicht über die grundsätzliche Verwendung von Daten bei Google finden Sie in der hauseigenen Datenschutzerklärung auf https://www.google.com/intl/de/policies/privacy/.
 
-Quelle: Erstellt mit dem Datenschutz Generator von AdSimple in Kooperation mit testingly.de
+Quelle: Erstellt mit dem [Datenschutz Generator Österreich](https://www.adsimple.at/datenschutz-generator/) von AdSimple.
